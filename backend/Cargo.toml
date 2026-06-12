@@ -1,6 +1,22 @@
-[package]
-name = "bajiru-karaoke-backend"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+members = ["crates/*"]
+resolver = "2"
 
-[dependencies]
+[workspace.package]
+edition = "2024"
+rust-version = "1.96.0"
+license = "AGPL-3.0-only"
+
+[workspace.dependencies]
+axum = { version = "0.8", features = ["macros"] }
+sqlx = { version = "0.9", features = [
+    "runtime-tokio",
+    "tls-rustls-ring",
+    "postgres",
+    "chrono",
+    "macros",
+] }
+tokio = { version = "1", features = ["full"] }
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"

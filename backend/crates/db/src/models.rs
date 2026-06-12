@@ -1,0 +1,21 @@
+pub mod artist;
+pub mod audio;
+pub mod capability;
+pub mod cover_art;
+pub mod genre;
+pub mod playlist;
+pub mod song;
+pub mod tag;
+pub mod user;
+pub mod video;
+
+pub use artist::{Artist, NewArtist, UpdateArtist};
+pub use audio::{Audio, NewAudio};
+pub use capability::{Capability, NewCapability};
+pub use cover_art::{CoverArt, NewCoverArt, UpdateCoverArt};
+pub use genre::{Genre, NewGenre, UpdateGenre};
+pub use playlist::{NewPlaylist, Playlist, UpdatePlaylist};
+pub use song::{NewSong, Song, UpdateSong};
+pub use tag::{NewTag, Tag};
+pub use user::{NewUser, UpdateUser, User};
+pub use video::{NewVideo, Video};
