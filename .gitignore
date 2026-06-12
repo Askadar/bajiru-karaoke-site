@@ -1,0 +1,49 @@
+# VSCode
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!*.code-workspace
+
+# MacOS
+.DS_Store
+__MACOSX/
+._*
+
+# env
+.env
+.env.*
+!.env.example
+
+# Certs
+*.crt
+*.key
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Rust
+debug
+target
+**/*.rs.bk
+*.pdb
+**/mutants.out*/
+rustc-ice-*.txt
+
+# Node
+node_modules/
+.npm
+
+# pnpm
+.pnpm-store
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+.vite/
